@@ -1,0 +1,84 @@
+﻿body {
+    background: #F8F8FF;
+}
+
+.MainToolBar {
+    background: #E5E4E2;
+}
+
+.MainTitle {
+    font-family: 'Noto Serif Ahom', serif;
+    font-size: 32pt;
+    color: #181C0F;
+}
+
+.SubTitle {
+    font-family: 'Noto Serif Ahom', serif;
+    font-size: 20pt;
+    color: #181C0F;
+}
+
+.AboutDescription {
+    font-family: 'Noto Serif Ahom', serif;
+    font-size: 22pt;
+    line-height: 1.25cm;
+}
+
+.menuMobile {
+    display: none;
+}
+
+hr {
+    border-top: 3px solid #d5d1cb;
+}
+
+.contact_form {
+    margin: 8px;
+}
+
+.contact_field {
+    margin-top: 5px;
+}
+
+#contactTable {
+    display: inline;
+}
+
+#contactTableMobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menuMobile {
+        display: inline;
+    }
+
+    .contact_field {
+        margin-top: 2px;
+    }
+
+    #contactTable {
+        display: none;
+    }
+
+    #contactTableMobile {
+        display: inline;
+    }
+
+    .AboutDescription {
+        font-family: 'Noto Serif Ahom', serif;
+        font-size: 18pt;
+        line-height: 1cm;
+        color: #444342;
+    }
+}
