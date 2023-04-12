@@ -1,3 +1,7 @@
+IF OBJECT_ID('GetContactFieldsByLanguage') IS NOT NULL
+    DROP PROCEDURE dbo.GetContactFieldsByLanguage
+GO
+
 CREATE PROCEDURE [dbo].[GetContactFieldsByLanguage]
 	@abbreviation VARCHAR(5)
 AS 
@@ -11,6 +15,12 @@ SELECT
   JOIN Languages l
     ON c.LanguageId = l.id
  WHERE l.abbreviation = @abbreviation;
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+IF OBJECT_ID('GetPresentationByLanguage') IS NOT NULL
+    DROP PROCEDURE dbo.GetPresentationByLanguage
+GO
 
 CREATE PROCEDURE [dbo].[GetPresentationByLanguage]
 	@abbreviation VARCHAR(5)
@@ -27,6 +37,11 @@ SELECT
     ON p.LanguageId = l.id
  WHERE l.abbreviation = @abbreviation;
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+IF OBJECT_ID('GetSectionsByLanguage') IS NOT NULL
+    DROP PROCEDURE dbo.GetSectionsByLanguage
+GO
 
 CREATE PROCEDURE [dbo].[GetSectionsByLanguage]
 	@abbreviation VARCHAR(5)
@@ -41,6 +56,12 @@ SELECT
   JOIN Languages l
     ON s.LanguageId = l.id
  WHERE l.abbreviation = @abbreviation;
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+IF OBJECT_ID('InsertIPDetails') IS NOT NULL
+    DROP PROCEDURE dbo.InsertIPDetails
+GO
 
 CREATE PROCEDURE [dbo].[InsertIPDetails]
 	@city				VARCHAR(100)

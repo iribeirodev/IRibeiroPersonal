@@ -31,14 +31,10 @@ CREATE TABLE personalDB.dbo.Presentation (
 );
 
 INSERT INTO personalDB.dbo.Presentation (Id,PresentationTitle,PresentationText,LanguageId) VALUES
-	 (1,N'Um Pouco Sobre Mim',N'Nascido e criado no Rio de Janeiro, trabalhei em diversos projetos nessa cidade, tendo mudado posteriormente para São Paulo em 2013. Atualmente resido na região central e tenho conhecimento em algumas tecnologias como .Net, .Net Core e NodeJS (Typescript e Javascript).<br><br>
-Profissional atuante nas áreas de desenvolvimento e manutenção de sistemas desde 1998. Possuo experiência em projetos que utilizam tecnologias Microsoft, Oracle, etc, prestando serviços de migração, desenvolvimento ou manutenção a empresas de diversos ramos (Seguros, Energia, Petróleo e Finance).<br><br>
-Espero e acredito que esse material ajude a esclarecer dúvidas profissionais em futuros contatos eventualmente e que a seção de artigos possa servir de apoio a outros desenvolvedores.
-',1),
-	 (2,N'A Little About Myself',N'Born and raised in Rio de Janeiro, I worked on some important projects in that city, later moving to Sao Paulo in 2013. I currently live in Sao Paulo downtown and have knowledge in some technologies such as .Net, .Net Core and NodeJS (Typescript and Javascript). <br><br>
-Professional working in software development and maintenance since 1998, I have experience in projects that use Microsoft technologies, Oracle, etc., providing migration, development or maintenance services to companies in different fields (Insurance, Energy, Oil and Finance).<br><br>
-I hope and believe that this material will help clarify professional questions in future contacts eventually and the articles section can serve as support to other developers.
-',2);
+	 (1,N'Um Pouco Sobre Mim',N'Nascido e criado no Rio de Janeiro, trabalhei em diversos projetos nessa cidade, tendo mudado posteriormente para São Paulo em 2013. Atualmente resido na região central e tenho conhecimento em algumas tecnologias como .Net Framework, .Net Core, NodeJS, Typescript e Angular.<br><br>
+Profissional atuante nas áreas de desenvolvimento e manutenção de sistemas desde 1998. Possuo experiência em projetos que utilizam tecnologias Microsoft, Oracle, etc, prestando serviços de migração, desenvolvimento ou manutenção a empresas de diversos ramos (Seguros, Energia, Petróleo e Finance).',1),
+	 (2,N'A Little About Myself',N'Born and raised in Rio de Janeiro, I worked on some important projects in that city, later moving to Sao Paulo in 2013. I currently live in Sao Paulo downtown and have knowledge in some technologies such as .Net Framework, .Net Core, NodeJS, Typescript and Angular. <br><br>
+Professional working in software development and maintenance since 1998, I have experience in projects that use Microsoft technologies, Oracle, etc., providing migration, development or maintenance services to companies in different fields (Insurance, Energy, Oil and Finance).',2);
 
 CREATE TABLE personalDB.dbo.Sections (
 	Id int NOT NULL,
